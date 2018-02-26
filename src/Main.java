@@ -19,20 +19,6 @@ public class Main {
         String source = args[0];
         String destination = args[1];
 
-//        List<String> joined = Arrays.asList(
-//                "Lucifer.S04E10.abc.mkv",
-//                "Lucifer.S04E10.abc.srt",
-//                "lucifer.s04e12.someshit.mkv",
-//                "lucifer.s04e12.someshit.srt",
-//                "lucifer1030eagora.mkv",
-//                "the.big.bang.theory.s10e01.HDTV-Scene-AVS.mkv",
-//                "the.big.bang.theory.s10e01.HDTV-Scene-AVS.srt",
-//                "The.Big.bang.theory.s10e02.HDTV-Scene-AVS.mkv",
-//                "the.big.bang.theory.s10e02.HDTV-Scene-AVS.srt"
-//        );
-
-
-
         try (Stream<Path> stream = Files.list(Paths.get(source))) {
             List<String> joined = stream
                     .map(o -> o.getFileName().toString())
