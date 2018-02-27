@@ -20,7 +20,7 @@ public class Main {
 
         Options options = new Options();
 		
-		Option input = new Option("s", "source", true, "source folder");
+	Option input = new Option("s", "source", true, "source folder");
         input.setRequired(true);
         options.addOption(input);
 
